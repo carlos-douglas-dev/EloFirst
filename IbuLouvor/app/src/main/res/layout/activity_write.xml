@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <RelativeLayout
+        android:id="@+id/writeProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#400E0E0E">
+
+        <ProgressBar
+            android:id="@+id/writeProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>
+
+    <EditText
+        android:id="@+id/EdtMinistracao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite aqui quem vai ministrar"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        />
+
+    <EditText
+        android:id="@+id/EdtVocal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vocal 1"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtMinistracao"
+        />
+    <EditText
+        android:id="@+id/EdtVocal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Vocal 2"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtVocal1"
+        />
+
+    <EditText
+        android:id="@+id/EdtBaixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Baixo"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtVocal2"
+        />
+    <EditText
+        android:id="@+id/EdtBateria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bateria"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtBaixo"
+        />
+    <EditText
+        android:id="@+id/EdtViolao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Violão"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtBateria"
+        />
+    <EditText
+        android:id="@+id/EdtGuitarra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Guitarra"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtViolao"
+        />
+    <EditText
+        android:id="@+id/EdtTeclado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Teclado"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtGuitarra"
+        />
+    <EditText
+        android:id="@+id/EdtMusicas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Músicas"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/EdtTeclado"
+        android:maxLines="5"
+        />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:layout_below="@+id/EdtMusicas"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnSaveToDrive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#23AAE6"
+        android:layout_alignParentBottom="true"
+        android:text="Salvar na Planilha"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        />
+
+
+</RelativeLayout>
